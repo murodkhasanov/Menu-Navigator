@@ -1,49 +1,153 @@
-#menu {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: rgb(1, 42, 153);
+.back {
+    background-color: black;
+    width: auto;
+    height: 80px;
+    position: relative;
+    bottom: 80px;
+    font-size: 46px;
     color: aliceblue;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    line-height: 36px;
-    text-align: center;
-    cursor: pointer;
-    z-index: 27;
-    /* transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1.1); */
 }
-#menu.times {
-    transform: rotate(-180deg);
+.back>h4 {
+    padding: 8px 30px;
 }
 #navbar {
     position: fixed;
-    top: 15px;
-    right: 25px;
-    border: 1px solid blue;
+    top: 30px;
+    left: 270px;
     padding: 10px 15px 10px 10px;
-    border-radius: 10px;
-    z-index: 4;
-    transform: scale(0);
-    opacity: 0;
-    /* transform-origin: top right;
-    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1.1); */
-}
-#navbar.navbar-tugl {
-    transform: scale(1);
-    opacity: 1;
 }
 #navbar a {
-    display: block;
-    padding: 5px 70px 5px 10px;
+    display: inline;
+    font-size: 20px;
+    padding: 5px 50px 5px 10px;
+    color: aliceblue;
     text-decoration: none;
-    color: darkblue;
-    font-weight: bold;
-    font-size: 12px;
-    border-radius: 5px;
 }
 #navbar a:hover {
     color: blue;
-    background-color: aliceblue;
+    background-color: rgb(173, 191, 206);
     transition: all 1s ease;
+    border-radius: 6px;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+ body {
+    background-color: rgb(108, 105, 105);
+ }
+    #navbar {
+    position: fixed;
+    top: 15px;
+    left: 100px;
+    padding: 17px 30px 5px 95px;
+    border-radius: 10px;
+}
+#navbar a {
+    display: inline;
+    font-size: 20px;
+    padding: 5px 25px 5px 10px;
+    text-decoration: none;
+}
+#navbar a:hover {
+    color: blue;
+    background-color: rgb(173, 191, 206);
+    transition: all 1s ease;
+    border-radius: 6px;
+}
+
+}
+
+
+@media only screen and (max-width: 700px) {
+    body {
+        background-color: rgb(90, 87, 89);
+     }
+        #navbar {
+        position: fixed;
+        top: 15px;
+        left: 50px;
+        padding: 17px 30px 5px 95px;
+        border-radius: 10px;
+    }
+    #navbar a {
+        display: inline;
+        font-size: 20px;
+        padding: 5px 10px 5px 10px;
+        text-decoration: none;
+    }
+    #navbar a:hover {
+        color: blue;
+        background-color: rgb(173, 191, 206);
+        transition: all 1s ease;
+        border-radius: 6px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: rgb(85, 85, 85);
+    }
+    #menu {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: rgb(0, 0, 0);
+        color: aliceblue;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        line-height: 36px;
+        text-align: center;
+        cursor: pointer;
+        z-index: 27;
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1.1);
+    }
+    #menu.fa-xmark {
+        transform: rotate(-180deg);
+    }
+    #navbar {
+        position: fixed;
+        top: 65px;
+        right: 25px;
+        left: 8px;
+        background-color: rgb(21, 21, 21);
+        padding: 10px 15px 10px 10px;
+        width: 459px;
+        z-index: 4;
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1.1);
+    }
+    #navbar.navbar-tugl {
+        transform: scale(1);
+        opacity: 1;
+    }
+    #navbar a {
+        display: block;
+        padding: 10px 70px 10px 10px;
+        text-decoration: none;
+        color: rgb(222, 222, 233);
+        font-weight: bold;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    #navbar a:hover {
+        color: rgb(98, 98, 186);
+        background-color: aliceblue;
+        transition: all 1s ease;
+    }
+    .back {
+        background-color: black;
+        width: auto;
+        height: 80px;
+        position: relative;
+        bottom: 60px;
+        font-size: 46px;
+        color: aliceblue;
+    }
 }
